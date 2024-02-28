@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #1d1d1b,#6d0277);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.btn-number, .btn-operator, .btn-equal{
+    background-color: rgb(233, 16, 81);
+    width: 70px;
+    height: 40px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+#display{
+    background-color: #ffffff;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
