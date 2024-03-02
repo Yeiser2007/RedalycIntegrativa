@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario</h1>
+      <form action="/Formulario/Exito.html">
+        <div class="entrada">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            required
+            maxlength="50"
+            name="nombre"
+          />
+          <p class="validator" id="nomVal"></p>
+        </div>
+        <div class="entrada">
+          <label for="direc">Direccion</label>
+          <input
+            type="text"
+            id="direc"
+            name="direccion"
+            maxlength="50"
+            required
+          />
+          <p class="validator" id="dirVal"></p>
+        </div>
+        <div class="entrada">
+          <label for="telefono">Telefono</label>
+          <div class="tel">
+            <select id="prefijo" name="prefijo">
+              <option value="52">(+52)</option>
+              <option value="1">(+1)</option>
+              <option value="44">(+44)</option>
+              <option value="33">(+33)</option>
+            </select>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              required
+            />
+          </div>
+          <p class="validator" id="numVal"></p>
+        </div>
+        <div class="entrada">
+          <label for="email">Correo Electronico</label>
+          <input type="email" id="email" name="email" required />
+          <p class="validator" id="emVal"></p>
+        </div>
+        <div class="entrada">
+          <label for="mensaje">Mensaje</label>
+          <input
+            type="text"
+            id="mensaje"
+            name="mensaje"
+            maxlength="50"
+            required
+          />
+          <p class="validator" id="menVal"></p>
+        </div>
+        <div class="btn">
+          <input type="button" id="btn" value="Enviar" />
+          <span id="validate"></span>
+        </div>
+      </form>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
