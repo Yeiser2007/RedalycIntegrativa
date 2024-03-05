@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu edad</title>
+    <link rel="stylesheet" href="/CalcEdad/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="seccion">
+            <div class="entrada">
+                <label for="dia">Día</label>
+                <input type="number" name="dia" id="dia">
+                <p id="diaVal"></p>
+            </div>
+            <div class="entrada">
+                <label for="mes">Mes</label>
+                <input type="number" name="mes" id="mes">
+                <p id="mesVal"></p>
+            </div>
+            <div class="entrada">
+                <label for="anio">Año</label>
+                <input type="number" name="anio" id="anio">
+                <p id="anVal"></p>
+            </div>
+        </div>
+        <hr>
+        <div class="seccion2">
+            <p>Tu fecha de nacimiento es: <b id="fecha"></b> </p>
+            <div class="contenido">
+                <div class="data">
+                    <p class="años" id="años"></p>
+                    <p>Años</p>
+                </div>
+                <div class="data">
+                    <p class="meses" id="meses"></p>
+                    <p>meses</p>
+                </div>
+                <div class="data">
+                    <p class="dias" id="dias"></p>
+                    <p>Dias</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/CalcEdad/index.js"></script>
+</body>
+</html>
